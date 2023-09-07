@@ -1,10 +1,7 @@
 <?xml version="1.0"?>
-<!-- Default highlighting used by MainDab | Updated Feb 7 2023 -->
-<!-- well actually all the colours were just taken from Roblox Studio's dark theme except I changed it slightly (shhh don't tell ANYONE!) -->
 
 <SyntaxDefinition name="Lua" extensions=".lua" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
 	
-	<!-- Just some colour settings -->
 <Color name="Bool" foreground="#ffc600"/> <!-- "Yes/No" type of thing -->
 <Color name="Comment" foreground="#9c9c9c"/> <!-- Self explanatory -->
 <Color name="Functions" foreground="#84d6f7"/> <!-- Should be mostly covered by now -->
@@ -15,30 +12,22 @@
 <Color name="Strings" foreground="#adf195"/> <!-- Extremely self explanatory -->
 <Color name="LocalPropertyKeywrds" foreground="#61a1f1"/> <!-- There's quite a lot to fill in -->
 	<RuleSet>
-	
-		<!-- Bool -->
+
 		<Keywords color="Bool">
 			<Word>true</Word>
 			<Word>false</Word>
 			<Word>nil</Word>
 		</Keywords>
 
-		<!-- Comments -->
-		<!-- This is for multiline comments -->
 		<Span color="Comment" multiline="true">
 			<Begin>--\[[=]*\[</Begin>
 			<End>\][=]*\]</End>
 		</Span>
 		
-		<!-- Single line comments -->
 		<Span color="Comment">
 			 <Begin>--</Begin>
 		</Span>
 		
-		<!-- Functions, may not be completely covering everything -->
-		<!-- Honestly I just grabbed it from Synapse's documentation found at docs.synapse.to and lua.org/manual/5.1 -->
-		<!-- Some of these functions probably don't exist in free APIs -->
-		<!-- Also these aren't in any particular order -->
 		<Keywords color="Functions">
 			<Word>getgenv</Word>
 			<Word>getrenv</Word>
@@ -168,8 +157,6 @@
 			<Word>UDim2</Word>
 		</Keywords>
 		
-		<!-- Keywords -->
-		<!-- lua.org/manual/5.1/manual.html -->
 		<Keywords color="Keywrds">
 			<Word>and</Word>
 			<Word>break</Word>
@@ -200,8 +187,6 @@
 			<Word>self</Word>
 		</Keywords>
 
-		<!-- Local properties -->
-		<!-- https://roblox.fandom.com/wiki/List_of_properties_by_category -->
 		<Keywords color="LocalPropertyKeywrds">
 			<Word>HumanoidDescription</Word>
 			<Word>AccessoryBlob</Word>
@@ -717,7 +702,6 @@
 			<Word>velocity</Word>
 		</Keywords>
 
-		<!-- Numbers -->
 		<Rule color="Numbers">
 			\b0[xX][0-9a-fA-F]+	
 			|
@@ -734,8 +718,6 @@
 			<Word>+</Word>
 		</Keywords>
 		
-		<!-- Strings -->
-		<!-- Either ' ' or " " -->
 		<Span color="Strings">
 			<Begin color="Strings">'</Begin>
 			<End color="Strings">'</End>
@@ -746,19 +728,15 @@
             <End>"</End>
 		</Span>
 		
-		<!-- For the ones that are like [""] -->
 		<Span color="Strings" multiline="true">
 			<Begin>\[[=]*\[</Begin>
 			<End>\][=]*]</End>
 		</Span>
 		
-		<!-- Punctuation -->
 		<Rule color="Punctuation">
 			[\)\(*\&amp;\^\%\$\#@!\\\]\[;':",/&lt;&gt;?\{\}\|\-\=\+]+
 		</Rule>
 		
-		<!-- Methods highlighting -->
-		<!-- This MUST go last btw -->
 		<Rule color="Methods">
 			\b
 			[\d\w_]+	# an identifier
