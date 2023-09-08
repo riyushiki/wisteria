@@ -1,1 +1,29 @@
-
+[
+  {
+    "filename": "Abyss.json",
+    "themeurl": "https://raw.githubusercontent.com/riyushiki/wisteria/main/themes/Abyss.json"
+  },
+  {
+    "filename": "AestheticMountain.json",
+    "themeurl": "https://github.com/riyushiki/wisteria/raw/main/themes/AestheticMountain.json"
+  },
+  {
+    "filename": "BlackHole.json",
+    "themeurl": "https://github.com/riyushiki/wisteria/raw/main/themes/BlackHole.json"
+  },
+  {
+    "filename": "DarkTheme.json",
+    "themeurl": "https://github.com/riyushiki/wisteria/raw/main/themes/DarkTheme.json"
+  },
+  {
+    "filename": "Grey.json",
+    "themeurl": "https://raw.githubusercontent.com/riyushiki/wisteria/main/themes/Grey.json"
+  },
+  {
+    "filename": "PurpleBlue.json",
+    "themeurl": "https://raw.githubusercontent.com/riyushiki/wisteria/main/themes/PurpleBlue.json"
+  },
+  {
+    "filename": "AnimatedMountain.json",
+    "themeurl": "https://github.com/riyushiki/wisteria/raw/main/themes/AnimatedMountain.json"
+  }
