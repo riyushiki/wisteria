@@ -1,1 +1,9 @@
-
+[
+    {
+        "title":"Bee Swarm Simulator",
+        "credits": "by Boxking776 & Schervi",
+        "desc" : "A large collection of scripts for BSS.",
+        "script":"loadstring(game:HttpGet(\"https://raw.githubusercontent.com/MainDabRblx/ProjectDab/master/ScriptStorage/GameHub/AnimeGames/AUT.lua\"))()",
+        "imgurl" : "https://raw.githubusercontent.com/MainDabRblx/ProjectDab/master/ScriptStorageImages/GameHub/AnimeGames/AUT.png"
+    }
+]
